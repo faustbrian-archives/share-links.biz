@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/sharelinks-php-client",
     "description": "A Share-Links.biz Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-share-links", "share-links", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "share-links.biz", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
