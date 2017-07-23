@@ -17,10 +17,10 @@ class Folder extends AbstractAPI
 {
     public function insert($links, array $parameters = []): HttpResponse
     {
-        $params          = compact('links') + $parameters;
+        $params = compact('links') + $parameters;
         $params['links'] = implode("\n", $params['links']);
 
-        if (!empty($params['blinks'])) {
+        if (! empty($params['blinks'])) {
             for ($i = 0; $i < count($params['mirrors']); ++$i) {
                 $params["mirrors[$i]"] = implode("\n", $params['mirrors'][$i]);
             }
@@ -33,11 +33,11 @@ class Folder extends AbstractAPI
     {
         $params = compact('folderCode') + $parameters;
 
-        if (!empty($links)) {
+        if (! empty($links)) {
             $params['links'] = implode("\n", $params['links']);
         }
 
-        if (!empty($params['blinks'])) {
+        if (! empty($params['blinks'])) {
             for ($i = 0; $i < count($params['mirrors']); ++$i) {
                 $params["mirrors[$i]"] = implode("\n", $params['mirrors'][$i]);
             }
