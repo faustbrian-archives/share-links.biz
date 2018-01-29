@@ -23,7 +23,7 @@ class Folder extends AbstractAPI
         $params['links'] = implode("\n", $params['links']);
 
         if (! empty($params['blinks'])) {
-            for ($i = 0; $i < count($params['mirrors']); ++$i) {
+            for ($i = 0; $i < count($params['mirrors']); $i++) {
                 $params["mirrors[$i]"] = implode("\n", $params['mirrors'][$i]);
             }
         }
@@ -40,7 +40,7 @@ class Folder extends AbstractAPI
         }
 
         if (! empty($params['blinks'])) {
-            for ($i = 0; $i < count($params['mirrors']); ++$i) {
+            for ($i = 0; $i < count($params['mirrors']); $i++) {
                 $params["mirrors[$i]"] = implode("\n", $params['mirrors'][$i]);
             }
         }
