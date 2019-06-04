@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/sharelinks-php-client",
+    "name": "plients/sharelinks",
     "description": "A Share-Links.biz Client for PHP",
-    "keywords": ["api", "http", "share-links.biz"],
+    "keywords": [
+        "api",
+        "http",
+        "share-links.biz"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0"
@@ -18,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\ShareLinks\\": "src"
+            "Plients\\ShareLinks\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\ShareLinks\\": "tests"
+            "Plients\\Tests\\ShareLinks\\": "tests"
         }
     },
     "config": {
